@@ -10,7 +10,7 @@ public class Section53Sorter{
             // Find the minimum element in unsorted array
             int min_idx = i;
             for (int j = i+1; j < n; j++)
-                if (arr[j] <= arr[min_idx])
+                if (arr[j] > arr[min_idx])
                     min_idx = j;
  
             // Swap the found minimum element with the first
